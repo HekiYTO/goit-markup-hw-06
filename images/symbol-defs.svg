@@ -1,0 +1,7 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-galochka" viewBox="0 0 40 32">
+<path fill="#f4f4fd" style="fill: var(--color1, #f4f4fd)" d="M33.6 1.2c0.673-0.532 1.534-0.854 2.47-0.854 1.945 0 3.566 1.389 3.926 3.229l0.004 0.025c0 0.8 0 2-0.8 2.8l-20 24.4c-0.695 0.597-1.605 0.96-2.6 0.96s-1.905-0.363-2.605-0.965l0.005 0.004-12.8-12.8c-0.545-0.678-0.875-1.549-0.875-2.497 0-2.209 1.791-4 4-4 0.31 0 0.612 0.035 0.902 0.102l-0.027-0.005 1.2 1.2 10.4 10 16.8-21.6z"></path>
+</symbol>
+</defs>
+</svg>
