@@ -1072,8 +1072,10 @@ box-shadow: 0px 1px 6px 0px #2E2F4214;
         padding: 16px 0 16px 8px;
       }
 
-      .mobilemenubutton {
-
+      .mobilemenu {
+        position: absolute;
+        right: 5%;
+        top: 3%;
       }
 
       .header > .container {
@@ -1099,7 +1101,7 @@ box-shadow: 0px 1px 6px 0px #2E2F4214;
       }
 }
 
-/*Notebook styles */
+/*Pad styles */
 
 @media (min-width:768px ) and (max-width: 1158px) {
     body {
@@ -1121,7 +1123,7 @@ box-shadow: 0px 1px 6px 0px #2E2F4214;
     .fleaderdva {
         gap: 5px;
         flex-wrap: wrap;
-        max-width: 200px;
+        max-width: 160px;
     }
 
     .logoheader {
@@ -1173,4 +1175,37 @@ letter-spacing: 2%;
               .section-three > .container {
                 align-items: center;
               }
+
+              .section-four > .container {
+                padding: 0;
+              }
+
+              .log-p-footer {
+                margin-right: 0;
+              }
+
+              .footer > .container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80vw;
+              }
+
+              .footer-sl {
+                padding: 20px;
+              }
+
+              .footer-f {
+                margin: 40px 0 0 ;
+              }
+
+              .s-one-overlay {
+                top: 40%;
+              }
+}
+
+@media (min-width: 1158px) { 
+    .mobilemenubutton {
+        display: none;
+        position: absolute;
+    }
 }
