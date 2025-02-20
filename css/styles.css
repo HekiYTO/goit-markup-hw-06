@@ -1174,3 +1174,9 @@ letter-spacing: 2%;
     }
 
 }
+
+@media (min-resolution: 192dpi) {
+    .section-one {
+      background-image: url('../images/background_imagesx2.jpg');
+    }
+  }
