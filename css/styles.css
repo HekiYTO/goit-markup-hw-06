@@ -618,7 +618,7 @@ color: #2E2F42;
         max-width: 1440px;
         padding: 75px 0;
         background-color: #2E2F42;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroundjpg.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background_images.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1177,6 +1177,6 @@ letter-spacing: 2%;
 
 @media (min-resolution: 192dpi) {
     .section-one {
-      background-image: url('../images/background_imagesx2.jpg');
+      background-image: url('../images/backgroundjpgx2.jpg');
     }
   }
