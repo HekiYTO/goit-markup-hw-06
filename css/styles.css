@@ -274,14 +274,13 @@ ul {
 
 .mom-inside {
     height: 100vh;
+    padding: 48px 0;
    position: relative ;
    display: flex;
    flex-direction: column;
 }
 
 .momul {
-    margin-top: 48px;
-    margin-bottom: 32px;
     display: flex;
     gap: 40px;
 }
@@ -291,7 +290,6 @@ ul {
 }
 
 .mom-pages-ul {
-    margin-top: 50px;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -313,7 +311,7 @@ color: #2E2F42;;
 }
 
 .mom-contacts-ul {
-   
+   margin-bottom: 48px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -352,7 +350,6 @@ color: #2E2F42;
     .s-three-li-sl {
         min-width: 40px;
         height: 40px;
-        margin: 0 0 20px 0;
     }
     
     .s-three-a-sl:hover {
@@ -641,8 +638,8 @@ color: #2E2F42;
         font-family: Roboto;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 2%;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     text-align: center;
     max-width: 216px;
     margin: 0 auto 48px;
@@ -668,14 +665,13 @@ color: #2E2F42;
     @media screen and (min-width: 768px) {
 
         .section-one {
-            padding: 130px 0;
+            padding: 188px 0;
         }
 
         .section-one-mtext {
     
             font-size: 56px;
             font-weight: 700;
-            line-height: 60px;
             text-align: center;
             color: #FFFFFF;
             max-width: 496px;
@@ -690,6 +686,7 @@ color: #2E2F42;
     }
 
     .s-two-hdva {
+        margin-bottom: 8px;
         color: #2E2F42;
 font-weight: 700;
 font-size: 36px;
@@ -710,13 +707,13 @@ letter-spacing: 2%;
 
     .section-two {
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-    padding: 120px 0;
+    padding: 96px 0;
     }
-
+/*
     .s-two-li:not(:last-child) {
-        padding-bottom: 80px;
+       margin-bottom: 72px;
     }
-
+*/
     @media screen and (min-width: 768px) {
 
         .s-two-ul {
@@ -778,7 +775,7 @@ letter-spacing: 2%;
     }
     
     .section-three { 
-        padding: 120px 0;
+        padding: 96px 0;
         background-color: #F4F4FD;
     }
 
@@ -800,7 +797,7 @@ letter-spacing: 2%;
     }
 
     .s-three-ul {
-        gap: 40px;
+        gap: 24px;
         display: flex;
         flex-direction: column;
     }
@@ -868,8 +865,7 @@ letter-spacing: 2%;
 
         .section-four {
             box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-            padding-top: 120px; 
-            padding-bottom: 120px;
+            padding: 96px 0;
         }
 
         .s-four-h {
@@ -911,8 +907,10 @@ letter-spacing: 2%;
         
 .s-four-h-tri {
     color: #2E2F42;
-    font-family: "Roboto", serif;
-   
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
     line-height: 1.2;
     margin-bottom: 8px
 }
@@ -988,7 +986,7 @@ letter-spacing: 2%;
 }
 
 .footer {
-    padding: 100px 0;
+    padding: 96px 0;
     background-color: #2E2F42;
 }
 
@@ -1110,6 +1108,7 @@ letter-spacing: 2%;
 
 
 .footer-form-button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     min-width: 165px; 
     height: 40px; 
     display: flex; 
@@ -1128,12 +1127,24 @@ letter-spacing: 2%;
     
     }
 
+.footer-form-button:hover {
+    background-color: #31d0aa;
+}
+
+.footer-form-button:focus {
+    background-color: #31d0aa;
+}
+
 .footer-form-button-svg {
     fill: #ffffff;
     margin-left: 16px; 
 }
 
 @media screen and (min-width: 768px) {
+    .s-two-ul {
+        gap: 24px;
+    }
+
    .footer > .container {
     flex-direction: row;
     width: 70% ;
@@ -1143,7 +1154,7 @@ letter-spacing: 2%;
 
    .log-p-footer {
     display: block;
-    width: 258px;
+    width: 264px;
     margin-bottom: 0;
    }
    .footer-sl {
@@ -1173,11 +1184,11 @@ letter-spacing: 2%;
     
 
     .log-p-footer {
-        margin-right: 100px;
+        margin-right: 120px;
     }
     
     .footer-sl {
-        margin-right: 70px;
+        margin-right: 80px;
     }
 
 }
