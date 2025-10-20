@@ -72,6 +72,7 @@ ul {
         
         .container {
             max-width: 1158px;
+            padding:0 15px;
         }
 
     }
@@ -162,10 +163,6 @@ ul {
     /*Tab*/
 
     @media screen and (min-width: 768px) {
-
-        .header > .container {
-            justify-content: baseline;
-        }
 
         .container > .navheader {
             margin-right: auto;
@@ -272,9 +269,13 @@ ul {
     border-radius: 50%;
 }
 
+address {
+    font-style: normal;
+}
+
 .mom-inside {
     height: 100vh;
-    padding: 48px 0;
+    padding: 72px 15px 40px;
    position: relative ;
    display: flex;
    flex-direction: column;
@@ -310,8 +311,12 @@ color: #2E2F42;;
     ;
 }
 
+.mom-contacts {
+       margin-bottom: 48px;
+}
+
 .mom-contacts-ul {
-   margin-bottom: 48px;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -341,7 +346,6 @@ color: #2E2F42;
     }
 
     .s-three-ul-otc {
-        margin-top: 16px;
         display: flex;
         justify-content: center;
         gap: 24px;
@@ -397,7 +401,7 @@ color: #2E2F42;
     
     .s-one-overlay {
         transform: translate(-50%, -50%);
-        padding: 72px 24px 24px 24px;
+        padding: 72px 16px 16px 24px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         top: 50%;
         left: 50%;
@@ -555,14 +559,21 @@ color: #2E2F42;
     }
     
     .s-one-overlay-form-div-label-dva {
+        display: flex;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color:#8e8f99;
-        display: block;
+        width: 256px;
+        align-content: center;
+        gap: 8px;
     
     }
     
+    .span-overlay {
+        font-size: 12px;
+       letter-spacing: 0.02em;
+    }
     
     
     .s-one-overlay-input-checkbox:checked + .s-one-overlay-form-div-label-dva > .overlay-accept-checkbox {
@@ -573,7 +584,7 @@ color: #2E2F42;
       }
     
     .overlay-accept-checkbox {
-        width: 16px;
+        min-width: 16px;
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4); 
         border-radius: 2px;
@@ -586,6 +597,7 @@ color: #2E2F42;
     
     .overlay-a-checkbox {
         color: #4d5ae5; 
+        text-decoration:underline;
     }
     
     .send-commnet-button-overlay {
@@ -605,6 +617,10 @@ color: #2E2F42;
         background-color: #4D5AE5;
         border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .send-commnet-button-overlay:hover {
+        background-color: #31d0aa;
     }
 
     @media screen and (min-width: 768px) {
@@ -634,6 +650,7 @@ color: #2E2F42;
     }
     
     .section-one-mtext {
+        margin: 0 auto 72px;
         color: #ffffff;
         font-family: Roboto;
     font-weight: 700;
@@ -642,7 +659,7 @@ color: #2E2F42;
     letter-spacing: 0.02em;
     text-align: center;
     max-width: 216px;
-    margin: 0 auto 48px;
+
 
     }
     
@@ -669,11 +686,11 @@ color: #2E2F42;
     @media screen and (min-width: 768px) {
 
         .section-one {
-            padding: 188px 0;
+            padding: 112px 0;
         }
 
         .section-one-mtext {
-    
+            padding: 0 auto 36px;
             font-size: 56px;
             font-weight: 700;
             text-align: center;
@@ -746,6 +763,14 @@ letter-spacing: 2%;
             width: calc((100% - 72px) / 4);
         }
 
+        .section-one-mtext {
+                margin: 0 auto 48px;
+        }
+
+         .section-one {
+            padding: 188px 0;
+        }
+
         .s-two-p {
             font-weight: 400;
         }
@@ -806,6 +831,7 @@ letter-spacing: 2%;
 
     .s-three-ul {
         gap: 24px;
+        row-gap: 72px;
         display: flex;
         flex-direction: column;
     }
@@ -819,7 +845,6 @@ letter-spacing: 2%;
         color: #2E2F42;
         font-family: "Roboto", serif;
         text-align: center;
-        margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
@@ -828,13 +853,17 @@ letter-spacing: 2%;
     }
 
     .s-three-p {
-    
+        padding: 8px 0;
         font-weight: 400;
         line-height: 24px;
         text-align: center;
         }
 
         @media screen and (min-width: 768px) {
+
+          
+
+
             .s-three-ots {
                 width: 264px;
             }
@@ -844,6 +873,7 @@ letter-spacing: 2%;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
+                row-gap: 64px;
             }
 
         }
@@ -855,7 +885,7 @@ letter-spacing: 2%;
             
 
             .s-three-ul {
-                
+                row-gap: 0;
                 flex-direction: row;
                 flex-wrap: nowrap;
             }
@@ -939,6 +969,7 @@ letter-spacing: 2%;
 
 @media screen and (min-width: 768px) {
     .s-four-ul {
+        row-gap: 72px;
         flex-direction: row;
         display: flex;
     }
@@ -951,6 +982,7 @@ letter-spacing: 2%;
 
 @media screen and (min-width: 1158px) {
     .s-four-ul {
+        row-gap: 48px;
         flex-direction: row;
         display: flex;
     }
@@ -1101,7 +1133,7 @@ letter-spacing: 2%;
 }
 
 .footer-form-label-input{
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -1149,13 +1181,31 @@ letter-spacing: 2%;
 }
 
 @media screen and (min-width: 768px) {
-    .s-two-ul {
-        gap: 24px;
+    .s-one-overlay {
+         padding: 72px 24px 24px 24px;
     }
+
+    .s-two-ul {    
+        gap: 24px;
+        row-gap: 72px;
+    }
+
+    .footer-f {
+    margin-top: 0;
+}
+
+    .footer > .container {
+        gap: 24px;
+        row-gap: 72px;
+    }
+
+      .footer-form-label-input {
+                width: 264px;
+            }
 
    .footer > .container {
     flex-direction: row;
-    width: 70% ;
+    max-width: 584px ;
     flex-wrap: wrap;
     align-items: flex-start;
    }
@@ -1182,8 +1232,10 @@ letter-spacing: 2%;
 @media screen and (min-width: 1158px) {
 
     .footer > .container {
-        width: 100%;
+        max-width: 1158px;
         flex-wrap: nowrap;
+        gap: 0;
+        row-gap: 0;
        }
 
     .footer-f {
@@ -1197,6 +1249,10 @@ letter-spacing: 2%;
     
     .footer-sl {
         margin-right: 80px;
+    }
+
+    .section-one, .section-two, .section-three, .section-four, footer {
+        padding: 120px 0;
     }
 
 }
