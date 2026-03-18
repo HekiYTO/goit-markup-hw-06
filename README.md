@@ -1,6 +1,1 @@
-https://hekiyto.github.io/goit-markup-hw-04/
-
-div class="s-three-sl">
-                        <ul class="s-three-ul-otc">
-                            <li class="s-three-li-sl">
-                                <a href="/" class="s-three-a-sl">
+My first site that was made from Figma maket with all CSS and HTML standarts
